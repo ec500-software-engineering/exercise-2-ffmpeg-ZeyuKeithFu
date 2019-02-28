@@ -25,7 +25,7 @@ def main():
             thread = re_encode.re_encode(id, inputs[id-1])
             thread.start()
         elif q.empty():
-            break;
+            break
 
     return
 
