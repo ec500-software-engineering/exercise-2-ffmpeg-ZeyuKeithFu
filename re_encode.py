@@ -13,7 +13,7 @@ class re_encode(threading.Thread):
 
     def run(self):
         ff = FFmpeg(
-            executable='/Users/aznable/Desktop/exercise-2-ffmpeg-ZeyuKeithFu/ffmpeg',
+            executable='../ffmpeg', # Your path of FFmpeg executable file
             inputs={self.vid_input: ['-y', '-loglevel', '0']},
             outputs={self.output1: ['-s', 'hd720', '-b:v', '2M', '-framerate', '30'],
                      self.output2: ['-s', 'hd480', '-b:v', '1M', '-framerate', '30']}
